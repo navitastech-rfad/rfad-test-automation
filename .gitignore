@@ -1,0 +1,14 @@
+/.gradle/
+/build/
+/target/
+
+# Eclipse IDE
+.classpath
+.project
+/.settings/
+/bin/
+
+# IntelliJ IDE
+/.idea/
+/out
+.DS_Store
