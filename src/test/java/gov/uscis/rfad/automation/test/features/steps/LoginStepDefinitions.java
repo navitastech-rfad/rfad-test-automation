@@ -14,7 +14,8 @@ public class LoginStepDefinitions {
 
     @Given("^I have entered “User” and “testUser\" on login page$")
     public void i_have_entered_User_and_testUser_on_login_page() {
-        // Write code here that turns the phrase above into concrete actions
+        //loginSteps.open();
+        //loginSteps.login(url, userName, password);
         throw new PendingException();
     }
 
