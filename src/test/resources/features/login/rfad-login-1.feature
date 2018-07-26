@@ -10,9 +10,9 @@ Feature: System Login
     Then I can obtain access to a landing page with display <message>
 
     Examples:
-      | username | password    | message         |
-      | “User”   | “testUser"  | “Welcome User”  |
-      | “Admin”  | “testAdmin” | “Welcome Admin” |
+      | username         | password  | message         |
+      | admin@admin.com  | admin     | “Welcome User”  |
+      | admin@admin.com  | admin     | “Welcome Admin” |
 
   Scenario Outline: Failure Login to system
     Given I have entered <username> and <password>
