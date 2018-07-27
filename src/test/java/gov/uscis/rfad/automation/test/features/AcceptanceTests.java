@@ -10,9 +10,8 @@ import cucumber.api.CucumberOptions;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
-        features = "src/test/resources/features/login",
+        features = "src/test/resources/features",
         plugin = { "pretty" }
-        //,tags = {"@story_1"}
 )
 public class AcceptanceTests {
 }
