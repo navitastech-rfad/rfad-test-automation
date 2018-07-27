@@ -18,25 +18,17 @@ public class LoginSteps extends ScenarioSteps {
 
     @Step
     public void login(String userName, String password) {
-        System.out.println("UserName: " + userName);
-        System.out.println("Password: " + password);
-
-        WebElement usernameField = getDriver().findElement(By.id("username"));
-        usernameField.sendKeys(userName);
-        WebElement passField = getDriver().findElement(By.id("password-sign-in"));
-        passField.sendKeys(password);
-
+        loginPage.login(userName, password);
     }
 
     @Step
-    public void selectLogin() {
-        WebElement passField = getDriver().findElement(By.id("password-sign-in"));
-        passField.sendKeys(Keys.ENTER);
-        System.out.println("Tests");
+    public void goToLandingPage(String url) {
+        //loginPage.navigateTo(url);
     }
 
     @Step
-    public void loginUrl(String url) {
-        loginPage.navigateTo(url);
+    public void displayMessage(String messsage) {
+        loginPage.displayMessage(messsage);
     }
+
 }
