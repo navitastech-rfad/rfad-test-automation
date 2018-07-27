@@ -8,6 +8,10 @@ import gov.uscis.rfad.automation.test.features.steps.serenity.CaseDetailSteps;
 import net.thucydides.core.annotations.Steps;
 import net.thucydides.core.steps.ScenarioSteps;
 
+/**
+ * Created by tnguyen on 7/23/18.
+ */
+
 public class CaseDetailStepDefinitions extends ScenarioSteps {
 
     @Steps

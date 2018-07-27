@@ -6,16 +6,17 @@ Feature: Review List Cases
 
   Scenario: Display User List Cases
     Given I have login as a User
-    When I am on the List Cases page
-    Then I can obtain a list of cases assigned to me
+    When System redirect me to landing page
+    Then I can obtain a list cases assigned to me
 
   Scenario: Review Admin List Cases
     Given I have login as an Admin
-    When I am on the List Cases page
-    Then I can obtain a list of cases with assigned users
+    When System redirect me to landing page
+    Then I can obtain a list cases with assigned users
 
   Scenario: No List Cases Assigned Me
-    Given I have successfully login
-    When No list cases found
+    Given I have login as a User
+    And I do not have list cases assigned to me
+    When System redirect me to landing page
     Then Screen would display empty list
  

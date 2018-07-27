@@ -7,6 +7,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 
+/**
+ * Created by tnguyen on 7/23/18.
+ */
+
 public class LoginSteps extends ScenarioSteps {
 
     LoginPage loginPage;
