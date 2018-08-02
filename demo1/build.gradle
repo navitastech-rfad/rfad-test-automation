@@ -1,0 +1,54 @@
+buildscript {
+    repositories {
+        jcenter()
+        mavenLocal()
+    }
+    dependencies {
+        classpath("net.serenity-bdd:serenity-gradle-plugin:1.9.31")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'net.serenity-bdd.aggregator'
+
+version = '0.0.1-SNAPSHOT'
+group = 'gov.uscis.rfad'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+compileJava.options.encoding = 'UTF-8'
+compileTestJava.options.encoding = 'UTF-8'
+
+repositories {
+    jcenter()
+    mavenLocal()
+}
+
+// In this section you declare the dependencies for your production and test code
+dependencies {
+    implementation 'org.slf4j:slf4j-simple:1.7.25'
+    implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.7'
+
+
+    testImplementation 'junit:junit:4.12'
+    testImplementation 'org.assertj:assertj-core:3.10.0'
+    testImplementation 'net.serenity-bdd:serenity-core:1.9.31'
+    testImplementation 'net.serenity-bdd:serenity-junit:1.9.31'
+//    testImplementation 'net.serenity-bdd:serenity-spring:1.9.31'
+    testImplementation 'net.serenity-bdd:serenity-cucumber:1.9.12'
+}
+
+tasks.withType(Test) {
+    systemProperty 'webdriver.driver', System.getProperty('webdriver.driver', 'chrome')
+    systemProperty 'tags', System.getProperty('tags', '')
+}
+
+//Exclude integration tests as part of regular test task
+//Use -Dtest.profile=integration to include integration tests
+test {
+    testLogging.showStandardStreams = true
+    systemProperties System.getProperties()
+}
