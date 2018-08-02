@@ -19,7 +19,7 @@ public class ReportEb5ScamStepDefinitions {
 
     @Given("^I am on the USCIS EB5 scam$")
     public void i_am_on_the_uscis_eb5_scam() throws Throwable {
-        throw new PendingException();
+        reportEb5ScamSteps.opensHomePage();
     }
 
     @When("^I click on Submit New button$")
