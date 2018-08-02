@@ -9,7 +9,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 
 /**
- * Created by tnguyen on 7/23/18.
+ * Created by tnguyen on 8/1/18.
  */
 
 @DefaultUrl("http://www.google.com/")

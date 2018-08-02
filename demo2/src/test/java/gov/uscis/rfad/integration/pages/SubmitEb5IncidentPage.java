@@ -4,7 +4,7 @@ import net.serenitybdd.core.pages.PageObject;
 import net.thucydides.core.annotations.DefaultUrl;
 
 /**
- * Created by tnguyen on 7/26/18.
+ * Created by tnguyen on 8/1/18.
  */
 
 @DefaultUrl("http://www.google.com")
