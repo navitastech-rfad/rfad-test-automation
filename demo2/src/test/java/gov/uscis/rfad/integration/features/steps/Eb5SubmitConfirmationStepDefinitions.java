@@ -15,11 +15,11 @@ import net.thucydides.core.annotations.Steps;
 public class Eb5SubmitConfirmationStepDefinitions {
 
     @Steps
-    Eb5SubmitConfirmationSteps listCaseSteps;
+    Eb5SubmitConfirmationSteps eb5SubmitConfirmationSteps;
 
     @Given("^That I have entered my EB5 scam incident$")
     public void that_i_have_entered_my_eb5_scam_incident() throws Throwable {
-        throw new PendingException();
+        eb5SubmitConfirmationSteps.openPage();
     }
 
     @When("^I click Send$")

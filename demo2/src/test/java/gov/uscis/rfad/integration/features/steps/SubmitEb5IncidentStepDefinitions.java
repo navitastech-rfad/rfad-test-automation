@@ -19,7 +19,7 @@ public class SubmitEb5IncidentStepDefinitions extends ScenarioSteps {
 
     @Given("^I am on the Submit New page$")
     public void i_am_on_the_submit_new_page() throws Throwable {
-        throw new PendingException();
+        submitEb5IncidentSteps.openPage();
     }
 
     @When("^I entered (.*), (.*), (.*), (.*) and (.*)$")
