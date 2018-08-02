@@ -1,4 +1,4 @@
-# user story 1:
+@alm_1
 Feature: Report a new EB5 scam
 
   As a member of the public, I want to be able to submit a tip to USCIS to report an EB5 scam

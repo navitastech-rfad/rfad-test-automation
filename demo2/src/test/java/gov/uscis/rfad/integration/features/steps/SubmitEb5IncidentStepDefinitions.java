@@ -17,4 +17,18 @@ public class SubmitEb5IncidentStepDefinitions extends ScenarioSteps {
     @Steps
     SubmitEb5IncidentSteps submitEb5IncidentSteps;
 
+    @Given("^I am on the Submit New page$")
+    public void i_am_on_the_submit_new_page() throws Throwable {
+        throw new PendingException();
+    }
+
+    @When("^I entered (.*), (.*), (.*), (.*) and (.*)$")
+    public void i_entered_and(String firstname, String lastname, String email, String phonenumber, String descriptions) throws Throwable {
+        throw new PendingException();
+    }
+
+    @Then("^I am able to submit the scam$")
+    public void i_am_able_to_submit_the_scam() throws Throwable {
+        throw new PendingException();
+    }
 }
