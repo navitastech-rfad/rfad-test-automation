@@ -1,4 +1,4 @@
 rootProject.name = 'rfad-test-automation'
-include 'demo1'
-include 'demo2'
-
+//include 'demo1'
+//include 'demo2'
+include 'demo3'
